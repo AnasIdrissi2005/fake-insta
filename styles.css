@@ -1,0 +1,219 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Header with Instagram Logo */
+.header {
+    margin-bottom: 20px;
+}
+
+.insta-logo {
+    width: 100px;
+}
+
+/* Login Box */
+.login-box {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+}
+
+form input {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: 'Roboto', Arial, sans-serif;
+    transition: border-color 0.2s ease-in-out;
+}
+
+form input:focus {
+    border-color: #0095f6;
+    outline: none;
+}
+
+.password-field {
+    position: relative;
+    width: 100%;
+}
+
+.password-field input {
+    padding-right: 40px; /* Space for the eye icon */
+}
+
+.password-field i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #999;
+    font-size: 18px;
+    transition: color 0.2s ease-in-out;
+}
+
+.password-field i:hover {
+    color: #555;
+}
+
+form button {
+    width: 100%;
+    height: 32px;
+    padding: 6px;
+    background-color: #0095f6;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+form button:hover {
+    background-color: #0077b5;
+}
+
+/* Error message box */
+.error-box {
+    display: none; /* Hidden by default */
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    color: #721c24;
+    font-size: 14px;
+    text-align: center;
+}
+
+.error-box.show {
+    display: block; /* Show when needed */
+}
+
+.options a {
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: #00376b;
+    font-size: 14px;
+    transition: color 0.2s ease-in-out;
+}
+
+.options a:hover {
+    color: #005bb7;
+}
+
+.or-separator {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.or-separator .line {
+    flex: 1;
+    height: 1px;
+    background-color: #dbdbdb;
+}
+
+.or-separator span {
+    margin: 0 10px;
+    color: #999;
+    font-size: 14px;
+}
+
+.fb-button {
+    width: 100%;
+    height: 32px;
+    padding: 6px;
+    background-color: #4267b2;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.fb-button:hover {
+    background-color: #31508f;
+}
+
+.signup-prompt {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.signup-prompt p {
+    font-size: 14px;
+    color: #999;
+}
+
+.signup-prompt a {
+    color: #00376b;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease-in-out;
+}
+
+.signup-prompt a:hover {
+    color: #005bb7;
+}
+
+/* Footer with Meta Logo and Text */
+.footer {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.meta-logo {
+    width: 50px;
+    height: auto;
+}
+
+.meta-text {
+    font-size: 14px;
+    color: #000;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .login-box {
+        padding: 15px;
+    }
+
+    form input,
+    form button,
+    .fb-button {
+        height: 36px;
+        font-size: 13px;
+    }
+}
